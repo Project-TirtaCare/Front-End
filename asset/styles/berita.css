@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2??family=Lato:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Hero Banner */
+#container-hero{
+    background-image: url(../image/hero-berita.png);
+    height: fit-content;
+}
+
+#hero-content{
+    padding: 120px 0;
+}
+
+/* Highlights */
+#container-highlights{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+#highlights{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.text-content{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    color: #1F74AD;
+}
+
+.line-title{
+    width: 10px;
+    height: 58px;
+    background: #1F74AD;
+}
+
+.text-content h2{
+    font-size: 32px;
+}
+
+.list-highlights{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.card-highlights{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    border-radius: 8px;
+    padding-bottom: 16px;
+    border: 1px solid var(--csk-3498-db-200, #A8D3F0);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.10);
+}
+
+.card-highlights img{
+    width: 380px;
+    height: 240px;
+}
+
+.highlights-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 380px;
+    text-align: center;
+    padding: 12px 24px;
+}
+
+.highlights-content h3{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.info-berita{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.list-info{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.list-info img{
+    width: 24px;
+    height: 24px;
+}
+
+.info-berita .list-info p{
+    margin: 0;
+}
+
+.highlights-content p{
+    text-align: justify;
+    color: #6A6A6A;
+    margin-bottom: 12px;
+}
+
+.highlights-content a{
+    width: 100%;
+}
+
+/* Berita Terkini */
+#container-berita-terkini{
+    margin-bottom: 80px;
+}
+
+#berita-terkini{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#list-berita-terkini{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.section-berita-terkini{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 48px;
+}
+
+.section-berita-terkini img{
+    width: 380px;
+}
+
+.content-berita-terkini{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 620px;
+    padding: 12px 0;
+}
+
+.content-berita-terkini h3{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.content-berita-terkini .info-berita{
+    justify-content: flex-start;
+}
+
+.content-berita-terkini .info-berita img{
+    width: 24px;
+}
+
+.content-berita-terkini .list-info{
+    gap: 12px;
+}
+
+.content-berita-terkini p{
+    line-height: 140%;
+    color: #6A6A6A;
+    text-align: justify;
+    margin-bottom: 8px;
+}
+
+/* Info Gangguan */
+#container-info-gangguan{
+    margin-bottom: 80px;
+}
+
+#info-gangguan{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#list-info-gangguan{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-info-gangguan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.card-info-gangguan img{
+    width: 180px;
+    height: 220px;
+    border-radius: 8px;
+}
+
+.card-info-gangguan .list-info img{
+    width: 24px;
+    height: 24px;
+}
+
+.content-info-gangguan{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 260px;
+    padding: 24px 0;
+}
+
+.content-info-gangguan h3{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.content-info-gangguan a{
+    width: fit-content;
+    margin-top: 4px;
+}

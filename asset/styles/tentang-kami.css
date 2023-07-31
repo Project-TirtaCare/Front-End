@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2??family=Lato:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+#container-navbar{
+    z-index: 1;
+}
+
+/* Hero Banner */
+#container-hero{
+    background-image: url(../image/hero-tentangKami.png);
+    height: fit-content;
+}
+
+#hero-content{
+    padding: 120px 0;
+}
+
+/* Visi & Misi */
+#container-visi-misi{
+    position: relative;
+}
+
+#decoration{
+    position: absolute;
+    width: 400px;
+    left: 0;
+    top: -120px;
+}
+
+#visi-misi{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+}
+
+#section-visi-misi{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 140%;
+}
+
+#section-visi-misi h2{
+    font-size: 36px;
+}
+
+.list-content{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.content-visi-misi{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-visi-misi img{
+    width: 50px;
+}
+
+.content-visi-misi p{
+    color: #6A6A6A;
+    text-align: justify;
+    max-width: 400px;
+    padding: 8px;
+}
+
+/* Sejarah */
+#container-sejarah{
+    margin: 64px 0;
+    background-color: #D4E9F7;
+    padding: 80px;
+}
+
+#sejarah{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+}
+
+#sejarah img{
+    width: 380px;
+}
+
+#content-sejarah{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#content-sejarah h2{
+    font-size: 36px;
+}
+
+#content-sejarah p{
+    max-width: 580px;
+    color: #6A6A6A;
+    text-align: justify;
+    line-height: 140%;
+}
+
+/* Struktur Organisasi */
+#container-struktur-organisasi{
+    margin-bottom: 64px;
+}
+
+.struktur-organisasi{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+.struktur-organisasi .content-title p{
+    max-width: 480px;
+}
+
+.struktur-organisasi img{
+    width: 100%;
+}
+
+@media (max-width: 992px) {
+    #decoration{
+        display: none;
+    }
+}

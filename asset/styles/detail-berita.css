@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2??family=Lato:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+#container-detail-berita{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 1010px;
+}
+
+#detail-top{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#container-detail-berita h1{
+    font-size: 36px;
+    line-height: 110%;
+}
+
+.info-berita{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.list-info{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.list-info img{
+    width: 24px;
+    height: 24px;
+}
+
+#container-detail-berita p{
+    color: #6A6A6A;
+    text-align: justify;
+    line-height: 140%;
+}

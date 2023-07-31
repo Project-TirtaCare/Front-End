@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TirtaCare</title>
+    <link rel="shortcut icon" href="./asset/image/logo.png" type="image/x-icon">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./asset/styles/index.css">
+    <link rel="stylesheet" href="./asset/styles/pengaduan.css">
+
+    <!-- Javascript -->
+    <script defer src="./asset/script/script.js"></script>
+
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="container" id="container-navbar">
+        <nav class="navbar">
+            <div class="brand">
+                <img id="logo-brand" src="./asset/image/logo.png"></img>
+                <a href="index.html"><h1 id="name-brand">TirtaCare</h1></a>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Beranda</a></li>
+                <li><a href="#" id="active">Pengaduan</a></li>
+                <li><a href="#">Berita</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+            </ul>
+            <div class="toggle-btn">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+        <div class="dropDown-menu">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Pengaduan</a></li>
+            <li><a href="#">Berita</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+        </div>
+    </header>
+
+    <!-- Form Pengaduan -->
+    <div class="container" id="container-form">
+        <div id="pengaduan">
+            <h2>Form Detail Pengaduan</h2>
+            <div id="content-form">
+                <form action="">
+                    <div class="list-form">
+                        <label for="npa">NPA</label>
+                        <input class="short" type="number" placeholder="Masukkan No NPA" name="npa" id="npa"/>
+                    </div>
+                    <div class="list-form">
+                        <label for="nama">Nama Lengkap</label>
+                        <input class="long" type="text" placeholder="Masukkan Nama Lengkap" name="nama" id="nama"/>
+                    </div>
+                    <div class="list-form">
+                        <label for="alamat">Alamat</label>
+                        <input class="long" type="text" placeholder="Masukkan Alamat" name="alamat" id="alamat"/>
+                    </div>
+                    <div class="list-form">
+                        <label for="no-rumah">No Rumah</label>
+                        <input class="short" type="text" placeholder="Masukkan No Rumah" name="no-rumah" id="no-rumah"/>
+                    </div>
+                    <div class="list-form">
+                        <label for="email">Email</label>
+                        <input class="long" type="email" placeholder="Masukkan Alamat Email" name="email" id="email"/>
+                    </div>
+                    <div class="list-form">
+                        <label for="no-hp">No HP</label>
+                        <input class="short" type="number" placeholder="Masukkan No HP" name="no-hp" id="no-hp"/>
+                    </div>
+                    <div class="list-form">
+                        <label for="cabang">Cabang</label>
+                        <select class="short" name="cabang" id="cabang">
+                            <option name="cabang" value="01">Medan Kota</option>                    
+                            <option name="cabang" value="02">Sei Agul</option>                    
+                            <option name="cabang" value="03">Medan Denai</option>                    
+                            <option name="cabang" value="04">Medan Labuhan</option>                    
+                            <option name="cabang" value="05">Sibolangit</option>                    
+                            <option name="cabang" value="06">Berastagi</option>                    
+                            <option name="cabang" value="07">Sunggal</option>                    
+                            <option name="cabang" value="08">Padang Bulan</option>                    
+                            <option name="cabang" value="09">Deli Tua</option>                    
+                            <option name="cabang" value="11">Tuasan</option>                    
+                            <option name="cabang" value="13">Deli Serdang</option>                    
+                            <option name="cabang" value="14">Tapsel</option>                    
+                            <option name="cabang" value="16">Tapteng</option>                    
+                            <option name="cabang" value="17">Toba Samosir</option>                    
+                            <option name="cabang" value="20">HM Yamin</option>                    
+                            <option name="cabang" value="21">Diski</option>                    
+                            <option name="cabang" value="22">Samosir</option>                    
+                            <option name="cabang" value="23">Nias Selatan</option>                    
+                            <option name="cabang" value="24">Medan Amplas</option>                    
+                            <option name="cabang" value="27">Belawan Kota</option>                    
+                            <option name="cabang" value="28">Cemara</option>                    
+                            <option name="cabang" value="32">Pemasaran Air Limbah</option>                    
+                        </select>
+                    </div>
+                    <div class="list-form">
+                        <label>Jenis Aduan</label>
+                        <select class="long" name="jenis-aduan" id="jenis-aduan">                 
+                            <option name="jenisAduan" value="01">Air Mati</option>                    
+                            <option name="jenisAduan" value="02">Air Keruh</option>                    
+                            <option name="jenisAduan" value="03">Perbaikan Lubang Bor</option>                    
+                            <option name="jenisAduan" value="04">Bocor Pipa Dinas</option>                    
+                            <option name="jenisAduan" value="05">Bocor Pipa Distribusi</option>                    
+                            <option name="jenisAduan" value="06">Komplain Tagihan</option>                    
+                            <option name="jenisAduan" value="07">Pencatat Meter Tidak Datang</option>                    
+                            <option name="jenisAduan" value="08">Lain-Lain</option>                    
+                            <option name="jenisAduan" value="09">Meter Mati</option>                    
+                            <option name="jenisAduan" value="10">Konfirmasi No. Pelanggan</option>                                       
+                        </select>
+                    </div>
+                    <div class="list-form">
+                        <label>Detail Aduan</label>
+                        <textarea class="long" type="text" placeholder="Silahkan Tulis aduan dan keluhan Anda..." name="detail-aduan" id="detail-aduan"></textarea>
+                    </div>
+                </form>
+                <button id="submit-form" type="submit" class="btn btn-primary">Kirim Pengaduan</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

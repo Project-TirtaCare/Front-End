@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2??family=Lato:wght@400;700&family=Inter:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Form Pengaduan */
+#container-form{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#pengaduan{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+#pengaduan h2{
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+#content-form{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 24px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.list-form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+form label{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+} 
+
+form .short{
+    width: 340px;
+}
+
+form .long{
+    width: 670px;
+}
+
+form input, form select, form textarea{
+    padding: 16px 24px;
+    border: 2px solid #B3B2B2;
+    border-radius: 8px;
+}
+
+form input::placeholder, form textarea{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.list-form #jenis-aduan option{
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 8px;
+}
+
+textarea{
+    height: 160px;
+}
+
+#submit-form{
+    width: fit-content;
+    align-items: end;
+}
+
+@media (max-width: 992px) {
+    .short{
+        max-width: 240px;
+    }
+
+    .long{
+        max-width: 340px;
+    }
+}

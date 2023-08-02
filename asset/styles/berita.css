@@ -142,7 +142,9 @@
 }
 
 .section-berita-terkini img{
-    width: 380px;
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
 }
 
 .content-berita-terkini{

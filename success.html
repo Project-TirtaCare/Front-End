@@ -9,7 +9,7 @@
 
     <!-- Style CSS -->
     <link rel="stylesheet" href="./asset/styles/index.css">
-    <link rel="stylesheet" href="./asset/styles/detail-berita.css">
+    <link rel="stylesheet" href="./asset/styles/pengaduan.css">
 
     <!-- Javascript -->
     <script defer src="./asset/script/script.js"></script>
@@ -18,7 +18,6 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
-
 <body>
     <!-- Navbar -->
     <header class="container" id="container-navbar">
@@ -29,8 +28,8 @@
             </div>
             <ul class="menu">
                 <li><a href="./index.html">Beranda</a></li>
-                <li><a href="./form-pengaduan.html">Pengaduan</a></li>
-                <li><a href="./berita.html" id="active">Berita</a></li>
+                <li><a href="./form-pengaduan.html" id="active">Pengaduan</a></li>
+                <li><a href="./berita.html">Berita</a></li>
                 <li><a href="./tentang-kami.html">Tentang Kami</a></li>
             </ul>
             <div class="toggle-btn">
@@ -45,31 +44,13 @@
         </div>
     </header>
 
-    <!-- Detail Berita -->
-    <div class="container" id="container-detail-berita">
-        <div id="detail-top">
-            <h1>Dirut Perumda Tirtanadi Ikuti Rapat Dewan Pengawas</h1>
-            <div class="info-berita">
-                <div class="list-info">
-                    <img src="https://api.iconify.design/codicon/account.svg?color=%236a6a6a" alt="">
-                    <p>Divisi PR</p>
-                </div>
-                <div class="list-info">
-                    <img src="https://api.iconify.design/carbon/time.svg?color=%236a6a6a" alt="">
-                    <p>July 28, 2023</p>
-                </div>
-            </div>
+    <!-- Success -->
+    <div class="container" id="container-success">
+        <div id="success">
+            <img src="./asset/image/checked.png" alt="">
+            <h2>Pengaduan Berhasil Terkirim</h2>
+            <a href="./index.html" class="btn btn-primary" style="width: 120px;">Oke</a>
         </div>
-        <img src="./asset/image/detail-berita-1.jpg" alt="">
-        <p>
-            Direktur Utama Perumda Tirtanadi Kabir Bedi mengikuti rapat Dewan Pengawas di Kantor Gubernuran Jumat (28/7/2023).
-            <br><br>
-            Kabir Bedi yang didampingi Direktur Air Limbah Fauzan Nasution Kadiv Litbang Ewin Putra sementara Dewan Pengawas hadir Ketua Dewan Pengawas Arief S Trinugroho, Sekretaris Silmi dan anggota Andry Mahyar.
-            <br><br>
-            Rapat yang membahas rencana kerjasama solar pv sebagai alternatif energi di Perumda Tirtanadi dan pembahasan MoU terhadap beberapa perusahaan.
-            <br><br>
-            “Rapat ini sangat strategis sekali guna membahas energi alternatif dari solar pv,”ujar Kabir Bedi.
-        </p>
     </div>
 
     <!-- Footer -->
@@ -123,7 +104,7 @@
             </div>
         </div>
     </footer>
-    
+        
     <!-- Copy Right -->
     <div id="container-copy-right">
         <hr>
@@ -131,5 +112,6 @@
             <p>TirtaCare App  -   © 2023 All Rights Reserved</p>
         </div>
     </div>
+
 </body>
 </html>

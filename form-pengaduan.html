@@ -13,6 +13,7 @@
 
     <!-- Javascript -->
     <script defer src="./asset/script/script.js"></script>
+    <script defer src="./asset/script/pengaduan.js"></script>
 
     <!-- Icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -27,40 +28,40 @@
                 <a href="index.html"><h1 id="name-brand">TirtaCare</h1></a>
             </div>
             <ul class="menu">
-                <li><a href="#">Beranda</a></li>
+                <li><a href="./index.html">Beranda</a></li>
                 <li><a href="#" id="active">Pengaduan</a></li>
-                <li><a href="#">Berita</a></li>
-                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="./berita.html">Berita</a></li>
+                <li><a href="./tentang-kami.html">Tentang Kami</a></li>
             </ul>
             <div class="toggle-btn">
                 <i class='bx bx-menu'></i>
             </div>
         </nav>
         <div class="dropDown-menu">
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Pengaduan</a></li>
-            <li><a href="#">Berita</a></li>
-            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="./index.html">Beranda</a></li>
+            <li><a href="./form-pengaduan.html">Pengaduan</a></li>
+            <li><a href="./berita.html">Berita</a></li>
+            <li><a href="./tentang-kami.html">Tentang Kami</a></li>
         </div>
     </header>
 
     <!-- Form Pengaduan -->
-    <div class="container" id="container-form">
+    <div class="container" id="container-pengaduan">
         <div id="pengaduan">
             <h2>Form Detail Pengaduan</h2>
             <div id="content-form">
                 <form action="">
                     <div class="list-form">
                         <label for="npa">NPA</label>
-                        <input class="short" type="number" placeholder="Masukkan No NPA" name="npa" id="npa"/>
+                        <input class="short" type="number" placeholder="Masukkan No NPA" name="npa" id="npa" required/>
                     </div>
                     <div class="list-form">
                         <label for="nama">Nama Lengkap</label>
-                        <input class="long" type="text" placeholder="Masukkan Nama Lengkap" name="nama" id="nama"/>
+                        <input class="long" type="text" placeholder="Masukkan Nama Lengkap" name="nama" id="nama" required/>
                     </div>
                     <div class="list-form">
                         <label for="alamat">Alamat</label>
-                        <input class="long" type="text" placeholder="Masukkan Alamat" name="alamat" id="alamat"/>
+                        <input class="long" type="text" placeholder="Masukkan Alamat" name="alamat" id="alamat" required/>
                     </div>
                     <div class="list-form">
                         <label for="no-rumah">No Rumah</label>
@@ -72,11 +73,11 @@
                     </div>
                     <div class="list-form">
                         <label for="no-hp">No HP</label>
-                        <input class="short" type="number" placeholder="Masukkan No HP" name="no-hp" id="no-hp"/>
+                        <input class="short" type="number" placeholder="Masukkan No HP" name="no-hp" id="no-hp" required/>
                     </div>
                     <div class="list-form">
                         <label for="cabang">Cabang</label>
-                        <select class="short" name="cabang" id="cabang">
+                        <select class="short" name="cabang" id="cabang" required>
                             <option name="cabang" value="01">Medan Kota</option>                    
                             <option name="cabang" value="02">Sei Agul</option>                    
                             <option name="cabang" value="03">Medan Denai</option>                    
@@ -85,35 +86,21 @@
                             <option name="cabang" value="06">Berastagi</option>                    
                             <option name="cabang" value="07">Sunggal</option>                    
                             <option name="cabang" value="08">Padang Bulan</option>                    
-                            <option name="cabang" value="09">Deli Tua</option>                    
-                            <option name="cabang" value="11">Tuasan</option>                    
-                            <option name="cabang" value="13">Deli Serdang</option>                    
-                            <option name="cabang" value="14">Tapsel</option>                    
-                            <option name="cabang" value="16">Tapteng</option>                    
-                            <option name="cabang" value="17">Toba Samosir</option>                    
-                            <option name="cabang" value="20">HM Yamin</option>                    
-                            <option name="cabang" value="21">Diski</option>                    
-                            <option name="cabang" value="22">Samosir</option>                    
-                            <option name="cabang" value="23">Nias Selatan</option>                    
-                            <option name="cabang" value="24">Medan Amplas</option>                    
-                            <option name="cabang" value="27">Belawan Kota</option>                    
-                            <option name="cabang" value="28">Cemara</option>                    
-                            <option name="cabang" value="32">Pemasaran Air Limbah</option>                    
+                            <option name="cabang" value="09">Deli Tua</option>                
                         </select>
                     </div>
                     <div class="list-form">
                         <label>Jenis Aduan</label>
-                        <select class="long" name="jenis-aduan" id="jenis-aduan">                 
+                        <select class="long" name="jenis-aduan" id="jenis-aduan" required>                 
                             <option name="jenisAduan" value="01">Air Mati</option>                    
                             <option name="jenisAduan" value="02">Air Keruh</option>                    
                             <option name="jenisAduan" value="03">Perbaikan Lubang Bor</option>                    
                             <option name="jenisAduan" value="04">Bocor Pipa Dinas</option>                    
                             <option name="jenisAduan" value="05">Bocor Pipa Distribusi</option>                    
                             <option name="jenisAduan" value="06">Komplain Tagihan</option>                    
-                            <option name="jenisAduan" value="07">Pencatat Meter Tidak Datang</option>                    
-                            <option name="jenisAduan" value="08">Lain-Lain</option>                    
-                            <option name="jenisAduan" value="09">Meter Mati</option>                    
-                            <option name="jenisAduan" value="10">Konfirmasi No. Pelanggan</option>                                       
+                            <option name="jenisAduan" value="07">Pencatat Meter Tidak Datang</option>                                    
+                            <option name="jenisAduan" value="08">Meter Mati</option>                    
+                            <option name="jenisAduan" value="09">Konfirmasi No. Pelanggan</option>                                       
                         </select>
                     </div>
                     <div class="list-form">
@@ -123,6 +110,66 @@
                 </form>
                 <button id="submit-form" type="submit" class="btn btn-primary">Kirim Pengaduan</button>
             </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container" id="container-footer">
+        <div id="footer-content">
+            <div id="footer-desc">
+                <div id="footer-text">
+                    <h1>TirtaCare</h1>
+                    <p>TirtaCare berkomitmen mendengarkan dan menyelesaikan setiap pengaduan dan masukan Anda dengan penuh perhatian. Terima kasih telah mempercayakan pengaduan Anda kepada kami.</p>
+                </div>
+            </div>
+            <div id="quick-link">
+                <div class="quick-link-item">
+                    <h3>Menu</h3>
+                    <div class="link-item">
+                        <ul>
+                            <li><a href="./index.html">Beranda</a></li>
+                            <li><a href="./form-pengaduan.html">Pengaduan</a></li>
+                            <li><a href="./berita.html">Berita</a></li>
+                            <li><a href="./tentang-kami.html">Tentang Kami</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="quick-link-item">
+                    <h3>Hubungi Kami</h3>
+                    <div class="link-item">
+                        <div class="list-contact">
+                            <img src="https://api.iconify.design/carbon/location.svg?color=white" alt="">
+                            <p>Jl. Sisingamangaraja No.1 Medan</p>
+                        </div>
+                        <div class="list-contact">
+                            <img src="https://api.iconify.design/bi/telephone.svg?color=white" alt="">
+                            <p>+62 61 4571666</p>
+                        </div>
+                        <div class="list-contact">
+                            <img src="https://api.iconify.design/mdi/web.svg?color=white" alt="">
+                            <p>www.tirtanadi.co.id</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="quick-link-item">
+                    <h3>Follow Us</h3>
+                    <div class="link-item-sosmed">
+                        <ul>
+                            <li><a href=""><img src="https://api.iconify.design/ri/facebook-fill.svg?color=white" alt=""></a></li>
+                            <li><a href=""><img src="https://api.iconify.design/mdi/instagram.svg?color=white" alt=""></a></li>
+                            <li><a href=""><img src="https://api.iconify.design/ri/youtube-line.svg?color=white" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Copy Right -->
+    <div id="container-copy-right">
+        <hr>
+        <div id="copy-right-text">
+            <p>TirtaCare App  -   © 2023 All Rights Reserved</p>
         </div>
     </div>
 </body>
